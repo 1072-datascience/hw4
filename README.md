@@ -2,6 +2,12 @@
 
 ![PredictProtein](/images/img1.png)
 
+### Name: [your name in Chinese or English]
+### Student ID: [your student ID]
+
+## Description
+Make the interactive web service of PCA analysis by Shinyapp
+
 ### cmd
 
 ```R
