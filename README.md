@@ -1,4 +1,4 @@
-# hw4. Predict protein subcellular localization
+# hw4. predict protein subcellular localization
 
 ![PredictProtein](/images/img1.png)
 
@@ -6,15 +6,14 @@
 ### Student ID: [your student ID]
 
 ## Description
-Make the interactive web service of PCA analysis by Shinyapp
+Perform k-fold cross-validation for protein subcellular localization problem.
 
 ### cmd
-
 ```R
-Rscript hw4_studentID.R --fold n --input Archaeal_tfpssm.csv --output performance.csv
+Rscript hw4_studentID.R --fold k --input Archaeal_tfpssm.csv --output performance.csv
 ```
-* Perform *n*-fold cross-validation
-* % of training, % of calibration, % of testing= *n*-2, 1, 1
+* Perform *k*-fold cross-validation
+* % of training, % of calibration, % of testing= *k*-2, 1, 1
 
 ![cross-validation](/images/img2.png)
 
@@ -44,7 +43,7 @@ head(d[,5600:5603])
 
 ## Output: performance.csv
 
-* accuracy = *P*/*N*, average of *n*-fold cross-validation
+* accuracy = *P*/*N*, average of *k*-fold cross-validation
 
 set       |accuracy
 ---|---
@@ -60,7 +59,7 @@ Rscript hw4_studentID.R --fold 5 --input Archaeal_tfpssm.csv --output hw4/your_I
 ...
 Rscript hw4_studentID.R --fold 10 --input Archaeal_tfpssm.csv --output hw4/your_ID/output6.csv
 ```
-Each testing cmd get 15 points
+Each testing cmd gets 15 points.
 
 ## Bonus
 * Round number to two decimal places: 3 points
@@ -72,5 +71,5 @@ Each testing cmd get 15 points
   * 0.80 ~ 0.90: 2 points
 
 ## References
-* Chang, J.-M. M. et al. (2013) Efficient and interpretable prediction of protein functional classes by correspondence analysis and compact set relations. PLoS ONE 8, e75542.
-* Chang J-M, Su EC-Y, Lo A, Chiu H-S, Sung T-Y, & Hsu W-L (2008) PSLDoc: Protein subcellular localization prediction based on gapped-dipeptides and probabilistic latent semantic analysis. Proteins: Structure, Function, and Bioinformatics 72(2):693-710.
+* Chang, J.-M. M. et al. (2013) [Efficient and interpretable prediction of protein functional classes by correspondence analysis and compact set relations](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0075542). *PLoS ONE* 8, e75542.
+* Chang J-M, Su EC-Y, Lo A, Chiu H-S, Sung T-Y, & Hsu W-L (2008) [PSLDoc: Protein subcellular localization prediction based on gapped-dipeptides and probabilistic latent semantic analysis](https://onlinelibrary.wiley.com/doi/full/10.1002/prot.21944). *Proteins: Structure, Function, and Bioinformatics* 72(2):693-710.
