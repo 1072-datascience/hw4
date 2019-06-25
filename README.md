@@ -31,7 +31,7 @@ V3 ~ V5602: the gapped-dipeptide features of each protein
 ### Code to read data
 
 ```R
-d <- read.csv("Archaeal_tfpssm.csv", header = F)
+d <- read.csv(<Path to Archaeal_tfpssm.csv>, header = F)
 levels(d[,2])
 head(d[,5600:5603]) 
 ```
