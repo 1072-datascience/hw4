@@ -19,6 +19,8 @@ Rscript hw4_studentID.R --fold k --input Archaeal_tfpssm.csv --output performanc
 
 ## Input: Archaeal_tfpssm.csv
 
+This CSV doesn't contain a header. The information of columns as below:
+
 V2: labels of proteins
 
 * CP: Cytoplasmic
@@ -60,6 +62,8 @@ Rscript hw4_studentID.R --fold 5 --input Archaeal_tfpssm.csv --output hw4/your_I
 Rscript hw4_studentID.R --fold 10 --input Archaeal_tfpssm.csv --output hw4/your_ID/output6.csv
 ```
 Each testing cmd gets 15 points.
+**Please do not set input/output in your local path or URL.** 
+Otherwise, your code will fail due to fixed path problem.
 
 ## Bonus
 * Round number to two decimal places: 3 points
